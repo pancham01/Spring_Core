@@ -14,11 +14,5 @@ import lombok.NoArgsConstructor;
 public class Employee {
 	private String name;
 	private int id;
-	private Address address;
-	private List<Integer> list;
-	private Set<Integer> set;
-	private Map<Integer,String>map;
-	
-	
 	
 }

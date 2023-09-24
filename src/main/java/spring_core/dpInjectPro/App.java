@@ -13,7 +13,6 @@ public class App
 {
     public static void main( String[] args )
     {
-    	
     	ApplicationContext factory = new ClassPathXmlApplicationContext("ApplicationContext.xml");
     	Employee e =(Employee)factory.getBean("emp2");
     	System.out.println(e);
