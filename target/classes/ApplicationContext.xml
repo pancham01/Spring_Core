@@ -5,14 +5,25 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans  
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id ="emp" class="spring_core.dpInjectPro.Entity.Employee">
-	<property name="name" value="Shukla"/>
-	<property name="id" value="101"></property>
+
+	<bean id="emp" class="spring_core.dpInjectPro.Entity.Employee">
+		<constructor-arg ref="add1" />
+		<constructor-arg name="id" value="101" />
+		<constructor-arg name="name" value="Nitin" />
 	</bean>
-	
-	<bean id ="emp2" class="spring_core.dpInjectPro.Entity.Employee">
-	<constructor-arg name="name" value="Dikshant"/>
-	<constructor-arg name="id" value="303"/>
+
+	<bean id="add1" class="spring_core.dpInjectPro.Entity.Address">
+		<constructor-arg name="street" value="lodhi road.." />
+		<constructor-arg name="city" value="Delhi" />
 	</bean>
+
+	<!-- <bean id="empBean11" class="spring_core.dpInjectPro.Entity.Employee">
+		<property name="name" value="Guest1" />
+		<property name="address" ref="add" />
+	</bean>
+	<bean id="add" class="spring_core.dpInjectPro.Entity.Address">
+		<property name="street" value="dharawi" />
+		<property name="city" value="Mumbai" />
+	</bean> -->
 
 </beans>

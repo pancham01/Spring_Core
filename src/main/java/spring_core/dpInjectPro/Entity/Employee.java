@@ -1,27 +1,33 @@
 package spring_core.dpInjectPro.Entity;
 
 public class Employee {
+	private Address address;
 	private String name;
 	private int id;
+	
 
 	public Employee() {
 		super();
 	}
 
-	public Employee(String name, int id) {
+	
+	public Employee(Address address, String name, int id) {
 		super();
+		System.out.println("Hello1");
+
+		this.address = address;
 		this.name = name;
 		this.id = id;
-		System.out.println("Param-called");
+		System.out.println("Hello2");
 	}
 
-	public String getName() {
-		return name;
+
+	public Address getAddress() {
+		return address;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-		System.out.println("Name-setter");
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	public int getId() {
@@ -30,13 +36,19 @@ public class Employee {
 
 	public void setId(int id) {
 		this.id = id;
-		System.out.println("Id-setter");
+	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", id=" + id + "]";
+		return "Employee [name=" + name + ", id=" + id + ", address=" + address + "]";
 	}
 
 }
