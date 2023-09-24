@@ -5,14 +5,53 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans  
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id ="emp" class="spring_core.dpInjectPro.Entity.Employee">
-	<property name="name" value="Shukla"/>
-	<property name="id" value="101"></property>
+
+	<!-- <bean id="a1" class="spring_core.dpInjectPro.Entity.Address"> <property 
+		name="street" value="Dharawi" /> <property name="city" value="Mumbai" /> 
+		</bean> <bean id ="emp" class="spring_core.dpInjectPro.Entity.Employee"> 
+		<property name="name" value="Shukla"/> <property name="id" value="101"></property> 
+		<property name="address" ref="a1"/> </bean> -->
+
+	<bean id="a2" class="spring_core.dpInjectPro.Entity.Address">
+		<constructor-arg name="street" value="Lodhi marg...." />
+		<constructor-arg name="city" value="Delhi" />
 	</bean>
-	
-	<bean id ="emp2" class="spring_core.dpInjectPro.Entity.Employee">
-	<constructor-arg name="name" value="Dikshant"/>
-	<constructor-arg name="id" value="303"/>
+
+	<bean id="emp2" class="spring_core.dpInjectPro.Entity.Employee" autowire="byType">
+		<constructor-arg name="name" value="Dikshant" />
+		<constructor-arg name="id" value="303" />
+		<constructor-arg>
+			<list>
+				<value>10</value>
+				<value>20</value>
+				<value>30</value>
+				<value>40</value>
+				<value>50</value>
+				<value>60</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg>
+			<set>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>1</value>
+				<value>4</value>
+				<value>5</value>
+			</set>
+		</constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key="1" value="Anurag" />
+				<entry key="2" value="Anu" />
+				<entry key="3" value="Anoop" />
+				<entry key="4" value="Aamir" />
+				<entry key="5" value="Gajjumal" />
+					
+			
+			</map>
+		</constructor-arg>
+
 	</bean>
 
 </beans>
