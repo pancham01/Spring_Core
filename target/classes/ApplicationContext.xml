@@ -14,6 +14,10 @@
 		<property name="street" value="gandhi" />
 		<property name="city" value="delhi"></property>
 	</bean>
+	<bean id="address2" class="spring_core.dpInjectPro.Entity.Address">
+		<property name="street" value="gandhi_2" />
+		<property name="city" value="delhi_2"></property>
+	</bean>
 	
 	<!-- <bean id="employee1" class="spring_core.dpInjectPro.Entity.Employee">
 		<constructor-arg name="name" value="Shukla" />

@@ -14,7 +14,7 @@ public class App
     public static void main( String[] args )
     {
     	ApplicationContext factory = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-    	Employee e =(Employee)factory.getBean("employee1");
+    	Employee e =(Employee)factory.getBean("employee");
     	System.out.println(e);
     }
 }
