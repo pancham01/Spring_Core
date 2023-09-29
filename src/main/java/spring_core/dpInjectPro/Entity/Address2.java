@@ -2,13 +2,12 @@ package spring_core.dpInjectPro.Entity;
 
 import org.springframework.stereotype.Component;
 
-@Component(value="address")
-//@Primary
-public class Address implements IAddress {
-	private String city= "Rishi";
+@Component(value="address2")
+public class Address2 implements IAddress {
+	private String city= "shimla";
 	private String state= "UK";
 	
-	public Address() {
+	public Address2() {
 	}
 	
 	public String getCity() {
@@ -25,9 +24,6 @@ public class Address implements IAddress {
 	}
 	@Override
 	public String toString() {
-		return "Address [city=" + city + ", state=" + state + "]";
+		return "Address2 [city=" + city + ", state=" + state + "]";
 	}
-	
-	
-	
 }
