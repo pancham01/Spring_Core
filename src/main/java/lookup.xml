@@ -5,14 +5,16 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans  
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="address1" class="spring_core.dpInjectPro.Entity.Address" scope="prototype">
-		<property name="city" value="ghaziabad"></property>
-		<property name="state" value="UP"></property>
+	<bean id="address1" class="spring_core.dpInjectPro.Entity.Address" >
+		<property name="city" value="salimar"></property>
+		<property name="state" value="Delhi"></property>
 	</bean>
-	<bean id="empA" class="spring_core.dpInjectPro.Entity.Employee2" >
-		<property name="name" value="Mona"/>
-		<property name="age" value="101"/>
-		<property name="salary" value="10"/>
+	
+	<bean id="empA" class="spring_core.dpInjectPro.Entity.Employee3">
+		<lookup-method name="applyAddress" bean="address1"/>
+	<!-- 	<property name="address">
+			<ref bean="address1"/>
+		</property> -->
 	</bean>
 
 	

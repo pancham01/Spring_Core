@@ -4,7 +4,7 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Employee6 implements InitializingBean , DisposableBean{
+public class Employee2 implements InitializingBean , DisposableBean{
 
 	private String name;
 	int age;

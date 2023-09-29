@@ -9,7 +9,7 @@
 		<property name="city" value="ghaziabad"></property>
 		<property name="state" value="UP"></property>
 	</bean>
-	<bean id="empA" class="spring_core.dpInjectPro.Entity.Employee6" >
+	<bean id="empA" class="spring_core.dpInjectPro.Entity.Employee2" >
 		<property name="name" value="Mona"/>
 		<property name="age" value="101"/>
 		<property name="salary" value="10"/>
