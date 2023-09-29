@@ -16,7 +16,6 @@ public class App
     	ApplicationContext app = new ClassPathXmlApplicationContext("application.xml");
 		Employee bean = app.getBean("employee",Employee.class);
 		System.out.println(bean);
-
 		Employee bean1 = app.getBean(Employee.class);
 		System.out.println(bean1);
     	
