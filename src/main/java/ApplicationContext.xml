@@ -14,7 +14,6 @@
 	<bean id="emp2" class="spring_core.dpInjectPro.Entity.Employee">
 		<constructor-arg name="name" value="Dikshant" />
 		<constructor-arg name="id" value="303" />
-
 	</bean>
 
 </beans>
