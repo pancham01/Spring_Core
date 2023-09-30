@@ -11,7 +11,7 @@ public class Employee {
 	private int salary = 10_000;
 	
 	@Autowired
-	@Qualifier(value="address")
+//	@Qualifier(value="address")
 	private IAddress adddress;
 	
 	public Employee() {
