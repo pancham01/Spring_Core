@@ -1,26 +1,26 @@
 package spring_core.dpInjectPro.Entity;
 
-public class Child extends Parent {
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
-	private int age;
-	private int salary;
+@Component
+@Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+public class Child {
 	
-	public int getAge() {
-		return age;
+	private String name;
+	public Child() {
+	System.out.println("Child.Child()");
 	}
-	public void setAge(int age) {
-		this.age = age;
+
+	public String getName() {
+		return name;
 	}
-	public int getSalary() {
-		return salary;
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
-	@Override
-	public String toString() {
-		return "Child [age=" + age + ", salary=" + salary + ", getCompanyName()=" + getCompanyName() + ", getEmpId()="
-				+ getEmpId() + "]";
-	}
+
 	
 }
+
