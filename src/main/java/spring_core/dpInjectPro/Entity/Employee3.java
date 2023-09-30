@@ -5,6 +5,7 @@ abstract public class Employee3 {
 	private String name;
 	int age;
 	int salary;
+	
 	Address address;
 	
 	public abstract Address applyAddress();
