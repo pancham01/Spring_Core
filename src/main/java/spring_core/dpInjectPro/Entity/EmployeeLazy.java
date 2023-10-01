@@ -17,6 +17,10 @@ public class EmployeeLazy {
 	@Lazy
 	private Address adddress;
 	
+	public EmployeeLazy()
+	{
+		System.out.println("EmployeeLazy.EmployeeLazy()");
+	}
 	public void turnOn() {
 		System.out.println("Load operating system");
 	}

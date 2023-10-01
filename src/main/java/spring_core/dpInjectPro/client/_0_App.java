@@ -2,6 +2,7 @@ package spring_core.dpInjectPro.client;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 
 import spring_core.dpInjectPro.Entity.Address;
 import spring_core.dpInjectPro.Entity.Employee;
@@ -19,9 +20,9 @@ public class _0_App {
 		Employee bean = app.getBean(Employee.class);
 		System.out.println(bean);
 		System.out.println(bean.getAdddress());
-
-		System.out.println("----------");
-
+//
+//		System.out.println("----------");
+//
 		Address addBean1 = app.getBean(Address.class);
 		Address addBean2 = app.getBean(Address.class);
 		System.out.println(addBean1);
@@ -31,7 +32,7 @@ public class _0_App {
 //
 //		Employee bean1 = app.getBean(Employee.class);
 //		System.out.println(bean1);
-		// ((AbstractApplicationContext)app).registerShutdownHook();
+		 ((AbstractApplicationContext)app).registerShutdownHook();
 //		
 	}
 }

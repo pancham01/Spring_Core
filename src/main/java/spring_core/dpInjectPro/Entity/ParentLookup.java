@@ -9,7 +9,7 @@ abstract public class ParentLookup {
 	private String name;
 	
 	public ParentLookup() {
-		System.out.println("Parent.Parent()");
+		System.out.println("Parent.ParentLookUp()");
 	}
 	
 	@Lookup
