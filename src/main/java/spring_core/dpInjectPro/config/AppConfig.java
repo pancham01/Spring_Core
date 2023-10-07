@@ -12,7 +12,6 @@ import spring_core.dpInjectPro.Entity.Employee;
 
 @Configuration
 @ComponentScan(basePackages= "spring_core.dpInjectPro")
-@Import({Employee.class})
 public class AppConfig {
 
 	//@Bean

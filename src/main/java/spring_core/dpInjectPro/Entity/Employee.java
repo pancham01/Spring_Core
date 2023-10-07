@@ -27,8 +27,12 @@ public class Employee {
 		System.out.println("Close all programs emp");
 	}
 	
+
+	public Employee() {
+		System.out.println("Employee.Employee()");
+	}
+	
 	public Employee(Address adddress) {
-		System.out.println("emp");
 		this.adddress = adddress;
 	}
 	public int getId() {

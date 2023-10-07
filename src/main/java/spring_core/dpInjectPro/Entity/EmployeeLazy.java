@@ -53,4 +53,7 @@ public class EmployeeLazy {
 	public void setAdddress(Address adddress) {
 		this.adddress = adddress;
 	}
+	
+	
+	
 }
