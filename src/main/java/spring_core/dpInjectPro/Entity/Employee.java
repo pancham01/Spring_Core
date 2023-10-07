@@ -1,39 +1,22 @@
 package spring_core.dpInjectPro.Entity;
 
-public class Employee {
-	private int id;
-	private String name;
-	private int salary;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Employee{
+	@Autowired
+	private Address address;
 	
-	public Employee(int id, String name, int salary) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.salary = salary;
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getSalary() {
-		return salary;
-	}
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
+	@Value("#{address.companyName}")
+	private String companyName;
+	
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
-	}
-	
+		return "Employee [address=" + address + ", companyName=" + companyName + "]";
+	}	
 	
 	
 }
+
