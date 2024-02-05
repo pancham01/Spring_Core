@@ -27,6 +27,7 @@ public class Employee {
 	}
 
 	public void setAddress(Address address) {
+		System.out.println("Employee.setAddress()");
 		this.address = address;
 	}
 

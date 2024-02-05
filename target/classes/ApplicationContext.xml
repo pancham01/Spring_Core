@@ -12,14 +12,18 @@
 		<constructor-arg name="street" value="lodhi road.." /> <constructor-arg name="city" 
 		value="Delhi" /> </bean> -->
 
-	<bean id="empBean11" class="spring_core.dpInjectPro.Entity.Employee" autowire="byType">
+	<bean id="empBean11" class="spring_core.dpInjectPro.Entity.Employee" autowire="byName">
 		<property name="name" value="Guest1" />
 		<property name="id" value="101"/>
 	</bean>
 	
-	<bean id="address1" class="spring_core.dpInjectPro.Entity.Address">
+	<bean id="address" class="spring_core.dpInjectPro.Entity.Address">
 		<property name="street" value="dharawi" />
 		<property name="city" value="Mumbai" />
+	</bean>
+	<bean id="address1" class="spring_core.dpInjectPro.Entity.Address">
+		<property name="street" value="dharawi......2" />
+		<property name="city" value="Mumbai.......2" />
 	</bean>
 
 </beans>
