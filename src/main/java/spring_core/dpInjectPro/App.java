@@ -13,7 +13,7 @@ public class App
 //    
     	
     	ApplicationContext factory = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-    	Employee e =(Employee)factory.getBean("empBean11");
+    	Employee e =(Employee)factory.getBean("emp");
     	System.out.println(e);
     }
 }

@@ -6,17 +6,22 @@
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 
-	<!-- <bean id="emp" class="spring_core.dpInjectPro.Entity.Employee" autowire="byType"> 
-		<constructor-arg name="id" value="101" /> <constructor-arg name="name" value="Nitin" 
-		/> </bean> <bean id="add1" class="spring_core.dpInjectPro.Entity.Address"> 
-		<constructor-arg name="street" value="lodhi road.." /> <constructor-arg name="city" 
-		value="Delhi" /> </bean> -->
-
-	<bean id="empBean11" class="spring_core.dpInjectPro.Entity.Employee" autowire="byName">
-		<property name="name" value="Guest1" />
-		<property name="id" value="101"/>
+	<bean id="emp" class="spring_core.dpInjectPro.Entity.Employee"
+		autowire="constructor">
+		<constructor-arg name="id" value="101" />
+		<constructor-arg name="name" value="Nitin" />
 	</bean>
-	
+	<bean id="add1" class="spring_core.dpInjectPro.Entity.Address">
+		<constructor-arg name="street" value="lodhi road.." />
+		<constructor-arg name="city" value="Delhi" />
+	</bean>
+
+	<!-- <bean id="empBean11"
+		class="spring_core.dpInjectPro.Entity.Employee" autowire="byName">
+		<property name="name" value="Guest1" />
+		<property name="id" value="101" />
+	</bean>
+
 	<bean id="address" class="spring_core.dpInjectPro.Entity.Address">
 		<property name="street" value="dharawi" />
 		<property name="city" value="Mumbai" />
@@ -24,6 +29,6 @@
 	<bean id="address1" class="spring_core.dpInjectPro.Entity.Address">
 		<property name="street" value="dharawi......2" />
 		<property name="city" value="Mumbai.......2" />
-	</bean>
+	</bean> -->
 
 </beans>
