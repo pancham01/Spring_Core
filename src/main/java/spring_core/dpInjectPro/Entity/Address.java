@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component(value="address")
 //@Primary
 public class Address implements IAddress {
-	private String city= "Rishi";
+	private String city= "Rishikesh";
 	private String state= "UK";
 	
 	public Address() {

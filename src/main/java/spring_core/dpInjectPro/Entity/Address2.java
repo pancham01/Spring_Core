@@ -9,7 +9,7 @@ public class Address2 implements IAddress {
 	
 	public Address2() {
 	}
-	
+	@Override
 	public String getCity() {
 		return city;
 	}

@@ -10,8 +10,7 @@ public class Employee {
 	private String name="Guest";
 	private int salary = 10_000;
 	
-	@Autowired
-//	@Qualifier(value="address")
+	
 	private IAddress adddress;
 	
 	public Employee() {
@@ -22,6 +21,10 @@ public class Employee {
 		this.id = id;
 		this.name = name;
 		this.salary = salary;
+	}
+	
+	public Employee(IAddress address) {
+		this.adddress=address;
 	}
 	public int getId() {
 		return id;
@@ -44,9 +47,10 @@ public class Employee {
 	public IAddress getAdddress() {
 		return adddress;
 	}
-	
-	
+	@Autowired
+	@Qualifier("address2")
 	public void setAdddress(IAddress adddress) {
+		System.out.println("Employee.setAdddress()");
 		this.adddress = adddress;
 	}
 	@Override
