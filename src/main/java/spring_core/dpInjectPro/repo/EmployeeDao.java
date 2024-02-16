@@ -1,14 +1,23 @@
 package spring_core.dpInjectPro.repo;
 
+import java.util.List;
+
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import spring_core.dpInjectPro.Entity.Employee;
+import spring_core.dpInjectPro.Entity.EmployeeMapper;
 
 public class EmployeeDao {
 	private JdbcTemplate jdbcTemplate;
 
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
+	}
+	
+	public List<Employee> getAllEmp()
+	{
+		return jdbcTemplate.query("select * from employee", new EmployeeMapper());
+
 	}
 
 	public int saveEmployee(Employee e) {
