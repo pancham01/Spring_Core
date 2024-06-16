@@ -48,7 +48,6 @@ public class Employee {
 		return adddress;
 	}
 	@Autowired
-	@Qualifier("address2")
 	public void setAdddress(IAddress adddress) {
 		System.out.println("Employee.setAdddress()");
 		this.adddress = adddress;
