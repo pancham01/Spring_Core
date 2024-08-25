@@ -11,8 +11,8 @@ public class App_beanLifeCycle {
 	    	Employee2 obj =  factory.getBean("empA",Employee2.class);
 			System.out.println(obj);
 			
-			Employee2 obj1 =  factory.getBean(Employee2.class);
-			System.out.println(obj1);
+//			Employee2 obj1 =  factory.getBean(Employee2.class);
+//			System.out.println(obj1);
 			
 			factory.registerShutdownHook();
 	    }
