@@ -16,11 +16,15 @@ public class App {
 	public static void main(String[] args) {
 		ApplicationContext app = new ClassPathXmlApplicationContext("application.xml");
 		EmployeeDao edao = app.getBean("edao", EmployeeDao.class);
-		Employee emp = new Employee(23, "Nakul", 80000);
+		Employee emp = new Employee(2, "Nakul", 80000);
+//    	edao.saveEmployee(emp);
+//    	emp = new Employee(3, "Arun", 80000);
+//    	edao.saveEmployee(emp);
+//    	emp = new Employee(4, "Mukul", 80000);
 //    	edao.saveEmployee(emp);
 //    	System.out.println("save successfully");
 
-		emp = new Employee(23, "Arjun", 70_000);
+//		emp = new Employee(1, "Arjun", 70_000);
 //    	edao.updateEmployee(emp);
 //    	System.out.println("updated successfully");
 
@@ -30,7 +34,7 @@ public class App {
 		for (Employee employee : allEmp) {
 			System.out.println(employee);
 		}
-		System.out.println("updated successfully");
+		System.out.println("Get successfully");
 
 	}
 }
