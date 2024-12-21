@@ -6,7 +6,7 @@
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<bean id="address1" class="spring_core.dpInjectPro.Entity.Address" scope="prototype">
-		<property name="city" value="ghaziabad"></property>
+		<property name="city" value="zzz"></property>
 		<property name="state" value="UP"></property>
 	</bean>
 	
@@ -17,6 +17,7 @@
 				<property name="state" value="UP"></property>
 			</bean>
 		</property>
+		<property name="name" value="Kapil"/>
 	</bean>
 
 	

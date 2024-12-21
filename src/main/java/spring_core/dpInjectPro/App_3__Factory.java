@@ -12,9 +12,9 @@ public class App_3__Factory {
 	    	DatabaseSingleton obj =  factory.getBean("dbSingleton",DatabaseSingleton.class);
 			System.out.println(obj);
 			
-			ApplicationContext factory1 =    new ClassPathXmlApplicationContext("factory.xml"); 
-			DatabaseSingleton obj1 = (DatabaseSingleton) factory1.getBean("dbSingleton");
-			System.out.println(obj1);
+//			ApplicationContext factory1 =    new ClassPathXmlApplicationContext("factory.xml"); 
+//			DatabaseSingleton obj1 = (DatabaseSingleton) factory1.getBean("dbSingleton");
+//			System.out.println(obj1);
 		
 	    }
 }

@@ -11,8 +11,8 @@
 	</bean>
 	
 	<bean id="dbSingleton" 
-		class="spring_core.dpInjectPro.Entity.DatabaseSingleton"
-		factory-bean="db" factory-method="getInstance">
+		class="spring_core.dpInjectPro.Entity.DatabaseSingleton" factory-bean="db"
+		 factory-method="getInstance">
 	</bean>
 	
 	<bean id="db" 
