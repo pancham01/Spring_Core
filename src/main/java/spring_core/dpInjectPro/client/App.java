@@ -16,19 +16,14 @@ public class App {
 	public static void main(String[] args) {
 		ApplicationContext app = new ClassPathXmlApplicationContext("application.xml");
 		EmployeeDao edao = app.getBean("edao", EmployeeDao.class);
-		Employee emp = new Employee(2, "Nakul", 80000);
+		Employee emp = new Employee(2, "vipul", 80000);
 //    	edao.saveEmployee(emp);
-//    	emp = new Employee(3, "Arun", 80000);
-//    	edao.saveEmployee(emp);
-//    	emp = new Employee(4, "Mukul", 80000);
-//    	edao.saveEmployee(emp);
-//    	System.out.println("save successfully");
-
-//		emp = new Employee(1, "Arjun", 70_000);
+//    	emp = new Employee(2, "Kuldeep", 80000);
 //    	edao.updateEmployee(emp);
 //    	System.out.println("updated successfully");
 
-//    	edao.deleteEmployee(emp);
+    	edao.deleteEmployee(emp);
+    	
 		List<Employee> allEmp=edao.getAllEmp();
 		
 		for (Employee employee : allEmp) {
