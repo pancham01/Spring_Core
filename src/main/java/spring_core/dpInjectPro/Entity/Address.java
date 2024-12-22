@@ -1,9 +1,8 @@
 package spring_core.dpInjectPro.Entity;
 
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component(value="address")
+@Component(value="address1")
 //@Primary
 public class Address implements IAddress {
 	private String city= "Rishikesh";
