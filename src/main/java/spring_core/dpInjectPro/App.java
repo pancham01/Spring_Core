@@ -10,19 +10,13 @@ import spring_core.dpInjectPro.Entity.Employee;
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-//    	ApplicationContext factory = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-//    	Employee e =(Employee)factory.getBean("emp2");
-//    	System.out.println(e);
-    	
-    	
-    	//Parent Child
-    	ApplicationContext bean = new ClassPathXmlApplicationContext("parent_child.xml");
-    	Child e2 =(Child)bean.getBean("child");
-    	System.out.println(e2);
-    	
-    }
+public class App {
+	public static void main(String[] args) {
+
+		// Parent Child
+		ApplicationContext bean = new ClassPathXmlApplicationContext("parent_child.xml");
+		Child e2 = bean.getBean("child", Child.class);
+		System.out.println(e2);
+
+	}
 }
