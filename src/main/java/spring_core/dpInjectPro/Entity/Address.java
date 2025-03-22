@@ -1,5 +1,6 @@
 package spring_core.dpInjectPro.Entity;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component(value="address1")
@@ -10,7 +11,6 @@ public class Address implements IAddress {
 	
 	public Address() {
 	}
-	
 	public String getCity() {
 		return city;
 	}
@@ -27,7 +27,5 @@ public class Address implements IAddress {
 	public String toString() {
 		return "Address [city=" + city + ", state=" + state + "]";
 	}
-	
-	
 	
 }

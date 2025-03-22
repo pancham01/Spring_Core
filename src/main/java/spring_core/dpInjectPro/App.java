@@ -14,8 +14,8 @@ public class App
 		Employee bean = app.getBean("employee",Employee.class);
 		System.out.println(bean);
 
-		Employee bean1 = app.getBean(Employee.class);
-		System.out.println(bean1);
+//		Employee bean1 = app.getBean(Employee.class);
+//		System.out.println(bean1);
     	
     }
 }
