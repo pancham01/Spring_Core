@@ -22,7 +22,7 @@ public class App {
 //    	edao.updateEmployee(emp);
 //    	System.out.println("updated successfully");
 
-    	edao.deleteEmployee(emp);
+//    	edao.deleteEmployee(emp);
     	
 		List<Employee> allEmp=edao.getAllEmp();
 		
