@@ -9,7 +9,7 @@ public class EmployeeMapper implements RowMapper<Employee> {
 
 	@Override
 	public Employee mapRow(ResultSet resultSet, int i) throws SQLException {
-
+		System.out.println("EmployeeMapper.mapRow()");
 		Employee emp = new Employee();
 		emp.setId(resultSet.getInt("id"));
 		emp.setName(resultSet.getString("name"));

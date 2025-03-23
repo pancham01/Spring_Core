@@ -21,7 +21,7 @@ public class EmployeeDao {
 	}
 
 	public int saveEmployee(Employee e) {
-		String query = "insert into employee (id,name,salary) values('" + e.getId() + "','" + e.getName() + "','" + e.getSalary() + "')";
+		String query = "insert into employee (id,name,salary,gender) values('" + e.getId() + "','" + e.getName() + "','" + e.getSalary() + "','Male')";
 		System.out.println(query);
 		return jdbcTemplate.update(query);
 	}
