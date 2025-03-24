@@ -13,11 +13,13 @@ public class App_5_lookup {
 		obj.setAddress(obj.applyAddress());
 		System.out.println(obj);
 		Address a1 = obj.applyAddress();
+		a1.setCity("Noida");
+		a1.setState("UP");
 		Address a2 = obj.applyAddress();
 		System.out.println(a1);
 		System.out.println(a2);
-		obj.getAddress().setCity("CITY");
-		System.out.println(obj);
+//		obj.getAddress().setCity("CITY");
+//		System.out.println(obj);
 
 	}
 }
