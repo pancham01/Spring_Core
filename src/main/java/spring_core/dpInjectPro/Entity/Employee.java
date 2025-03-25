@@ -2,9 +2,11 @@ package spring_core.dpInjectPro.Entity;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope(value = "prototype")
 public class Employee {
 	private int id =101;
 	private String name="Guest";
