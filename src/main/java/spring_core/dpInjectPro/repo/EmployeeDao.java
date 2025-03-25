@@ -21,7 +21,7 @@ public class EmployeeDao {
 	}
 
 	public int saveEmployee(Employee e) {
-		String query = "insert into employee (id,name,salary,gender) values('" + e.getId() + "','" + e.getName() + "','" + e.getSalary() + "','Male')";
+		String query = "insert into employee (id,name,salary,gender) values('" + e.getId() + "','" + e.getName() + "','" + e.getSalary() + "','"+e.getGender()+"')";
 		System.out.println(query);
 		return jdbcTemplate.update(query);
 	}
@@ -33,8 +33,8 @@ public class EmployeeDao {
 		return jdbcTemplate.update(query);
 	}
 
-	public int deleteEmployee(Employee e) {
-		String query = "delete from employee where id='" + e.getId() + "' ";
+	public int deleteEmployee(int id) {
+		String query = "delete from employee where id='" + id + "' ";
 		System.out.println(query);
 		return jdbcTemplate.update(query);
 	}

@@ -2,19 +2,30 @@ package spring_core.dpInjectPro.Entity;
 
 public class Employee {
 	private int id;
-	private String name;
+	private String name,gender;
 	private int salary;
 	
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Employee(int id, String name, int salary) {
+	
+	public Employee(int id, String name, String gender, int salary) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.gender = gender;
 		this.salary = salary;
 	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -33,9 +44,10 @@ public class Employee {
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
+
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+		return "Employee [id=" + id + ", name=" + name + ", gender=" + gender + ", salary=" + salary + "]";
 	}
 	
 	
