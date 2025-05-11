@@ -10,7 +10,6 @@ public class App_beanLifeCycle {
 		 	ClassPathXmlApplicationContext factory = new ClassPathXmlApplicationContext("beanLifecycle.xml"); 
 	    	Employee2 obj =  factory.getBean("empA",Employee2.class);
 			System.out.println(obj);
-			
 //			Employee2 obj1 =  factory.getBean(Employee2.class);
 //			System.out.println(obj1);
 			
