@@ -7,12 +7,12 @@
 
 	
 	<bean id="dbSingleton" 
-		class="spring_core.dpInjectPro.Entity.DatabaseSingleton" factory-method="getInstance">
+		class="spring_core.dpInjectPro.Entity.DatabaseSingleton" factory-method="getInstance" factory-bean="db">
 	</bean>
 	
-	<!-- <bean id="db" 
+	<bean id="db" 
 		class="spring_core.dpInjectPro.Entity.DatabaseSingleton">
-	</bean> -->
+	</bean>
 	
 	
 </beans>
