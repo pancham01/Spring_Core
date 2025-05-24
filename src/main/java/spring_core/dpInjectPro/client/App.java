@@ -18,7 +18,7 @@ public class App {
 	public static void main(String[] args) {
 		ApplicationContext app = new AnnotationConfigApplicationContext(Appconfig.class);
 		EmployeeDao edao = app.getBean(EmployeeDaoImpl.class);
-//		Employee emp = new Employee(7, "Nakul", 80000);
+		Employee emp = new Employee(8, "Vishwash", 80000);
 //    	edao.saveEmployee(emp);
 //    	System.out.println("save successfully");
 
