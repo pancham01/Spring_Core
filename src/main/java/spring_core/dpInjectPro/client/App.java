@@ -18,11 +18,11 @@ public class App {
 	public static void main(String[] args) {
 		ApplicationContext app = new AnnotationConfigApplicationContext(Appconfig.class);
 		EmployeeDao edao = app.getBean(EmployeeDaoImpl.class);
-//		Employee emp = new Employee(23, "Nakul", 80000);
+//		Employee emp = new Employee(7, "Nakul", 80000);
 //    	edao.saveEmployee(emp);
 //    	System.out.println("save successfully");
 
-//		emp = new Employee(23, "Arjun", 70_000);
+//		emp = new Employee(6, "Arjun", 70_000);
 //    	edao.updateEmployee(emp);
 //    	System.out.println("updated successfully");
 
