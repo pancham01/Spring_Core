@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component(value="address2")
 public class Address2 implements IAddress {
 	private String city= "shimla";
-	private String state= "UK";
+	private String state= "HP";
 	
 	public Address2() {
 	}
