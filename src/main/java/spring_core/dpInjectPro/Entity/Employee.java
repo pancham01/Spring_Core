@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope(value = "prototype")
 public class Employee {
+	
 	private int id =101;
 	private String name="Guest";
 	private int salary = 10_000;
@@ -16,7 +17,7 @@ public class Employee {
 	private IAddress adddress;
 	
 	public Employee() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	public Employee(int id, String name, int salary) {
 		super();
@@ -50,7 +51,7 @@ public class Employee {
 		return adddress;
 	}
 	@Autowired
-	@Qualifier(value = "address2")
+	@Qualifier("address2")
 	public void setAdddress(IAddress adddress) {
 		System.out.println("Employee.setAdddress()");
 		this.adddress = adddress;

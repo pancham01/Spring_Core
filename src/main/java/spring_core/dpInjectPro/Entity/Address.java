@@ -3,7 +3,6 @@ package spring_core.dpInjectPro.Entity;
 import org.springframework.stereotype.Component;
 
 @Component(value="address1")
-//@Primary
 public class Address implements IAddress {
 	private String city= "Rishikesh";
 	private String state= "UK";
