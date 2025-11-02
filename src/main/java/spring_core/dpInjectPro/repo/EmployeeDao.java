@@ -8,6 +8,8 @@ import spring_core.dpInjectPro.Entity.Employee;
 import spring_core.dpInjectPro.Entity.EmployeeMapper;
 
 public class EmployeeDao {
+	
+	
 	private JdbcTemplate jdbcTemplate;
 
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
