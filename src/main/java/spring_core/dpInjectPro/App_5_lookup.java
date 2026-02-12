@@ -16,12 +16,12 @@ public class App_5_lookup {
 		System.out.println(obj);
 		Address a1 = obj.applyAddress();
 		System.out.println(a1);
-		
-		
-		Address a2 = obj.applyAddress();
-		System.out.println(a2);
-		a2.setCity("Noida");
-		System.out.println(a2);
+//		
+//		
+//		Address a2 = obj.applyAddress();
+//		System.out.println(a2);
+//		a2.setCity("Noida");
+//		System.out.println(a2);
 
 	}
 }
