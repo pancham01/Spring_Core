@@ -6,7 +6,7 @@
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<bean id="address1" class="spring_core.dpInjectPro.Entity.Address" scope="prototype">
-		<property name="city" value="salimar"></property>
+		<property name="city" value="salimar garden"></property>
 		<property name="state" value="Delhi"></property>
 	</bean>
 	
