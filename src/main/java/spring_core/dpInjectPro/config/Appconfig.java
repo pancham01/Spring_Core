@@ -13,7 +13,7 @@ public class Appconfig {
 	@Bean
 	DataSource dataSource() {
 		DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-		driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/mydb");
+		driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/java17");
 		driverManagerDataSource.setUsername("root");
 		driverManagerDataSource.setPassword("root");
 		driverManagerDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
