@@ -14,12 +14,12 @@ public class App {
 	public static void main(String[] args) {
 		ApplicationContext ioc = new ClassPathXmlApplicationContext("application.xml");
 		EmployeeDao edao = ioc.getBean("edao", EmployeeDao.class);
-		Employee emp1 = new Employee(16, "Anurag Singh","Male", 99000);
+		Employee emp1 = new Employee(5, "Annu Malik","Male", 50000);
 //		edao.saveEmployee(emp1);
 		
 //		edao.updateEmployee(emp1);
 		
-//		edao.deleteEmployee(16);
+//		edao.deleteEmployee(5);
 
 		
 		List<Employee> allEmp = edao.getAllEmp();
